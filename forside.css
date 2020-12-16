@@ -1,0 +1,539 @@
+/*Baggrund*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    background-color: whitesmoke;
+    height: 150vw;
+    position: relative;
+}
+#banner {
+    width: 100%;
+    height: 12vw;
+    position: relative;
+    background-color: #EDEA90;
+
+}
+
+#logo {
+    position: relative;
+    width: 30vw;
+    height: 31vw;
+    top: -9vw;
+    left: 36vw;
+}
+
+body {
+    background-color: #F3F3F3;
+    height: 100vw;
+    position: relative;
+}
+
+
+#topbar1 {
+    background-color: lightpink;
+    height: 2vw;
+    top: -5vw;
+}
+
+#fragt {
+    position: absolute;
+    top: 0vw;
+    left: 70vw;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1vw;
+    line-height:;
+    font-weight: 1000;
+    color: rgb(255,85,57);
+}
+#levering {
+    position: absolute;
+    top: 0vw;
+    margin-left: 15vw;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.2vw;
+    line-height:; 
+    font-weight: 1000;
+    color: rgb(255,85,57);
+}
+
+#retur {
+    position: absolute;
+    top: 0vw;
+    margin-left: 43vw;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1vw;
+    line-height:; 
+    font-weight: 1000;
+    color: rgb(255,85,57);
+}
+
+
+/*            <!--   Menu og Dropdown->*/ 
+
+.menu {
+    overflow: hidden;
+    background-color: black;
+}
+
+.menu .content {
+    display: block;
+    top: -8vw;
+    position: absolute;
+
+    
+    
+}
+
+.menu .content a {
+    display: flex;
+    background-color: whitesmoke;
+    color: rgb(255,85,57);
+    font-size: 3vw;
+    font-weight: 900;
+    line-height: 3.5vw;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+   background-color: whitesmoke;
+    overflow: hidden;
+    outline: solid 2px;
+    width: 28vw;
+    padding: 1vw;
+  
+
+
+
+}
+
+.menu .content a:hover {
+    background-color: lightpink;
+}
+
+
+.dropdown {
+    height: 6vw;
+    z-index: 15;
+
+
+}
+
+.dropdown .dropbtn { 
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+    
+
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+padding: 2vw;
+    left: 20vw;
+    top: -2vw;
+}
+
+.dropdown-content a {
+  float: none;
+color: whitesmoke;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.kurv .kurv_indhold {
+     top: 20vw;
+    left: 77vw;
+    position: absolute;
+    
+}
+
+.kurv .kurv_indhold a {
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: rgb(255,85,57);
+    font-size: 1.5vw;
+    font-weight: 800;
+    line-height: 3vw;
+    font-family: 'JetBrains Mono', monospace;
+    padding-left: 1vw;
+    padding-right: 2.6vw;
+    padding-top: 0.2vw;
+    padding-bottom: 0.2vw;
+    outline: solid;
+    outline-width: 0.22vw;
+}
+
+.kurv .kurv_indhold a:hover {
+    background-color: lightpink;
+}
+
+
+/*            <!--   Menu og Dropdown over 600px->*/ 
+
+@media (min-width: 600px) {
+    
+
+.menu .content {
+    display: flex;
+    position: absolute;
+    margin-left: 7vw;
+    top: -5vw;
+}
+
+.menu .content a {
+    text-align: center;
+    background-color: #F3F3F3;
+    color: rgb(255, 85, 57);
+    font-size: 1.2vw;
+    font-weight: 1000;
+    line-height: 1;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    outline-color: rgb(255, 85, 57);
+    outline-style: solid;
+    outline-width: 0.2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    width: 8vw;
+    margin-left: 1vw;
+    height: 1.3vw;
+}
+
+
+.dropdown {
+  
+    z-index: 15;
+
+
+}
+
+
+.dropdown-content {
+    top: 0.8vw;
+    left: -2vw;
+    
+}
+
+    
+
+    
+    
+}
+
+
+
+    
+ 
+    
+
+
+#menuknap {
+    position: absolute;
+    top: 16vw;
+    left: 5vw;
+    font-size: 4vw;
+    background-color:lightpink;
+    color: rgb(255,85,57);
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
+}
+
+
+#menu1 {
+    transition: transform .3s;
+    transform-origin: top left;
+    position: absolute;
+    top: 22.2vw;
+    left: 11vw;
+    display: inline-block;
+}
+
+@media (min-width: 600px) {
+    #menuknap {
+    display: none;
+}
+    #menu1.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    #menu1 li {
+        display: inline-block;
+    }
+}
+
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    
+}
+
+
+/*Forside billede*/
+/*Lyserød boks */
+.pink_box {
+    top: 56.5vw;
+    left: 18.9vw;
+    position: absolute;
+    width: 32.8vw;
+    height: 10.8vw;
+    background-color: lightpink;
+    border-top-left-radius: 25px;
+}
+
+/*styling på overskrift i lyserød boks */
+.pink_box h2 {
+    font-family: 'JetBrains Mono', monospace;
+    color: rgb(255, 85, 57);
+    line-height: 3vw;
+    font-size: 3vw;
+    padding-left: 2vw;
+    position: relative;
+    top: 2vw;
+    margin-left: 1vw;
+}
+
+/*Footer*/
+#footer {
+    width: 100vw;
+    height: 20vw;
+    position: absolute;;
+    background-color: lightblue;
+    bottom: -50vw;
+}
+
+#instalink {
+    position: absolute;
+    top: 16vw;
+    left: 45vw;
+
+}
+
+#ig {
+    height: 3vw;
+}
+
+#fblink {
+    position: absolute;
+    top: 16vw;
+    left: 50vw;
+
+}
+
+#fb {
+    height: 3vw;
+}
+
+#inlink {
+    position: absolute;
+    top: 16vw;
+    left: 55vw;
+}
+
+#in {
+    height: 3vw;
+}
+
+.footerbar .indhold {
+    display: block;
+    top: 5vw;
+    position: absolute;
+    margin-left: 11.5vw
+}
+
+.footerbar .indhold a {
+    text-align: center;
+    color: rgb(255, 85, 57);
+    font-size: 1vw;
+    line-height: 3.5vw;
+    font-weight: 1000;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin: 5vw
+}
+
+.menu .content a:hover {
+    background-color: lightpink;
+}
+
+#tlf {
+    position: absolute;
+    top: 16vw;
+    left: 5vw;
+    font-size: 1.2vw;
+    line-height: 3.5vw;
+    font-weight: 1000;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+}
+
+#mail {
+    position: absolute;
+    top: 16vw;
+    left: 80vw;
+    font-size: 1.2vw;
+    line-height: 3.5vw;
+    font-weight: 1000;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+}
+
+#maillink {
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+    color: black;
+}
+
+/*billeder*/
+#container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#forside_billede {
+    position: absolute;
+    top: 23vw;
+    left: 19vw;
+    width: 30vw;
+}
+
+
+
+/*tekst på billede*/
+.jornes_production {
+    position: absolute;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 2.2vw;
+    color: white;
+    top: 56vw;
+    left: 22vw
+}
+
+/*video*/
+iframe {
+    width: 30vw;
+    height: 44.3vw;
+    position: absolute;
+    top: 23vw;
+    left: 49vw;
+    border: 0;
+}
+
+/*brun baggrund og tekst*/
+#brun {
+    position: absolute;
+    width: 60vw;
+    top: 68vw;
+    margin-left: 19vw;
+}
+
+#design {
+    position: absolute;
+    width: 51vw;
+    top: 71vw;
+    left: 23vw;
+    cursor: pointer;
+}
+
+/*spray paint*/
+#spraypaint {
+    position: absolute;
+    top: 17.8vw;
+    left: 74.3vw;
+    width: 9vw;
+}
+
+#spraypaint_tekst {
+    position: absolute;
+    font-family: 'Exo', sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+    color: rgb(255, 85, 57);
+    top: 21vw;
+    left: 75.5vw;
+}
+
+
+
+
+/*Mobil version*/
+@media screen and (min-width: 1420px) {
+    #footer {
+        width: 100vw;
+        height: 20vw;
+        position: absolute;
+        background-color: lightblue;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #main_info {
+        transform: scale(1.4);
+    }
+}
+
+@media (max-width: 800px) {
+    #forside_billede {
+    position: absolute;
+    top: 22vw;
+    left: 19vw;
+    width: 30vw;
+    z-index: -2;
+}
+    iframe {
+    width: 30vw;
+    height: 40.3vw;
+    position: absolute;
+    top: 22vw;
+    left: 49vw;
+    border: 0;
+    z-index: -2;    
+}
+    
+    .pink_box {
+    top: 51.6vw;
+    left: 19vw;
+    position: absolute;
+    width: 30vw;
+    height: 10.8vw;
+    background-color: lightpink;
+    border-top-left-radius: 25px;
+}
+    
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    
+}
+

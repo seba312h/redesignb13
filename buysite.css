@@ -1,0 +1,694 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#banner {
+    width: 100%;
+    height: 12vw;
+    position: relative;
+    background-color: #EDEA90;
+
+}
+
+#logo {
+    position: relative;
+    width: 30vw;
+    height: 31vw;
+    top: -9vw;
+    left: 36vw;
+}
+
+#sweat {
+    height: 19vw;
+    position: absolute;
+    top: 28vw;
+    left: 7vw;
+    z-index: -5;
+}
+
+#background {
+    background-color: whitesmoke;
+    height: 150vw;
+    position: relative;
+    z-index: -5;
+}
+
+#topbar1 {
+    background-color: lightpink;
+    height: 2vw;
+}
+
+#fragt {
+    position: absolute;
+    top: -0.5vw;
+    left: 70vw;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1vw;
+    font-weight: 1000;
+    color: rgb(255,85,57);
+}
+#levering {
+    position: absolute;
+    top: -0.5vw;
+    margin-left: 15vw;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1vw; 
+    font-weight: 1000;
+    color: rgb(255,85,57);
+}
+
+#retur {
+    position: absolute;
+    top: -0.5vw;
+    margin-left: 43vw;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1vw;
+    font-weight: 1000;
+    color: rgb(255,85,57);
+}
+
+/*            <!--   Menu og Dropdown->*/ 
+
+.menu {
+    overflow: hidden;
+    background-color: black;
+}
+
+.menu .content {
+    display: block;
+    top: -2vw;
+    position: absolute;
+
+    
+    
+}
+
+.menu .content a {
+    display: flex;
+    background-color: whitesmoke;
+    color: rgb(255,85,57);
+    font-size: 3vw;
+    font-weight: 900;
+    line-height: 3.5vw;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+   background-color: whitesmoke;
+    overflow: hidden;
+    outline: solid 2px;
+    width: 28vw;
+    padding: 1vw;
+
+
+
+}
+
+.menu .content a:hover {
+    background-color: lightpink;
+}
+
+
+.dropdown {
+    height: 6vw;
+    z-index: 15;
+
+
+}
+
+.dropdown .dropbtn { 
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+    
+
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+padding: 2vw;
+    left: 20vw;
+    top: -2vw;
+}
+
+.dropdown-content a {
+  float: none;
+color: whitesmoke;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.kurv .kurv_indhold {
+     top: 18vw;
+    left: 77vw;
+    position: absolute;
+    
+}
+
+.kurv .kurv_indhold a {
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: rgb(255,85,57);
+    font-size: 1.5vw;
+    font-weight: 800;
+    line-height: 3vw;
+    font-family: 'JetBrains Mono', monospace;
+    padding-left: 1vw;
+    padding-right: 2.6vw;
+    padding-top: 0.2vw;
+    padding-bottom: 0.2vw;
+    outline: solid;
+    outline-width: 0.22vw;
+}
+
+.kurv .kurv_indhold a:hover {
+    background-color: lightpink;
+}
+
+
+/*            <!--   Menu og Dropdown over 600px->*/ 
+
+@media (min-width: 600px) {
+    
+
+.menu .content {
+    display: flex;
+    position: absolute;
+    margin-left: 4vw;
+    top: -4vw;
+}
+
+.menu .content a {
+    text-align: center;
+    background-color: #F3F3F3;
+    color: rgb(255, 85, 57);
+    font-size: 1.2vw;
+    font-weight: 1000;
+    line-height: 1;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    outline-color: rgb(255, 85, 57);
+    outline-style: solid;
+    outline-width: 0.2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    width: 8vw;
+    margin-left: 1vw;
+    height: 1.3vw;
+}
+
+
+.dropdown {
+   position: relative;
+    z-index: 15;
+
+
+}
+
+
+.dropdown-content {
+    top: 0.8vw;
+    left: -2vw;
+    
+}
+
+    
+
+    
+    
+}
+
+
+/*            <!--   Buysite-->*/ 
+
+#buybackground {
+    background-color: whitesmoke;
+    height: 150vw;
+    position: relative;
+}
+
+.section_wrapper {
+    margin-left: 1vw;
+    margin-right: 3vw;
+}
+
+/*Lyserød boks */
+.pink_box {
+    top: 60vw;
+    position: absolute;
+    width: 70vw;
+    height: 10.8vw;
+    border-top-right-radius: 25px;
+    font-family: 'JetBrains Mono', monospace;
+     color: rgb(255, 85, 57);
+    text-align: center;
+}
+
+/*styling på overskrift i lyserød boks */
+
+
+
+/*Blå boks */
+
+.blue_box {
+    top: 25vw;
+    left: 52vw;
+    position: absolute;
+    width: 34vw;
+    height: 51vw;
+    background-color: lightblue;
+}
+
+/*billede */
+
+.posebuycontainer {
+    position: absolute;;
+    top: 25vw;
+    left: 16vw;
+    z-index: -5;
+}
+
+#greentop {
+    width: 36.8vw;
+    height: 51vw;
+}
+
+
+@media (max-width: 600px) {
+    .blue_box {
+    top: 50vw;
+    left: 52vw;
+    position: absolute;
+    width: 34vw;
+    height: 51vw;
+    background-color: lightblue;
+}
+    
+    
+.posebuycontainer {
+    position: absolute;
+    top: 50vw;
+    left: 16vw;
+    z-index: -5;
+}    
+    
+
+
+    
+}
+
+/*styling på overskrift til tekstfelt */
+
+.blue_box h2 {
+    font-family: 'JetBrains Mono', monospace;
+    color: rgb(255, 85, 57);
+    line-height: 5vw;
+    font-size: 2vw;
+    padding-left: 1vw;
+
+
+}
+
+/*styling på tekst */
+.blue_box p {
+    font-family: 'JetBrains Mono', monospace;
+    /*    line-height: 5vw;*/
+    font-size: 1.7vw;
+    padding-left: 1vw;
+    line-height: 2vw;
+
+
+}
+
+.blue_box h2,
+p {
+    line-height: 1.8vw;
+    padding-top: 0.5vw;
+    margin-right: 2vw;
+    position: relative;
+    top: 2vw;
+    margin-left: 1vw;
+
+}
+
+.size .indhold {
+    display: block;
+    top: 15vw;
+    left: 2vw;
+    position: absolute;
+    margin-left: 
+    
+}
+
+.size .indhold a {
+    background-color: whitesmoke;
+    color: rgb(255,85,57);
+    font-size: 1.5vw;
+    line-height: 3.5vw;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    outline: solid;
+    outline-width: 0.2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+    margin: 0.1vw
+
+
+}
+
+.size .sizes a:hover {
+    background-color: lightpink;
+}
+
+
+.size .sizes {
+     top: 20vw;
+    left: 5vw;
+    position: absolute;
+    z-index: 1500;
+}
+
+.size .sizes button{
+    text-align: center;
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: rgb(255,85,57);
+    font-size: 1.5vw;
+    line-height: 2.2vw;
+    font-family: 'JetBrains Mono', monospace;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    outline: solid;
+    outline-width: 0.2vw;
+    cursor: pointer;
+}
+
+.add .basket_indhold a:hover {
+    background-color: lightpink;
+}
+
+
+
+.add .basket_indhold {
+     top: 28.5vw;
+    left: 1vw;
+    position: absolute;
+}
+
+.add .basket_indhold button{
+    text-align: center;
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: rgb(255,85,57);
+    font-size: 1.5vw;
+    line-height: 2.2vw;
+    font-family: 'JetBrains Mono', monospace;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    outline: solid;
+    outline-width: 0.2vw;
+    cursor: pointer;
+}
+
+.add .basket_indhold a:hover {
+    background-color: lightpink;
+}
+
+#itemno {
+    position: absolute;
+    top: 0.9vw;
+    left: 4.5vw;
+    color: whitesmoke;
+      font-size: 1.8vw;
+    background: salmon;
+    border-radius: 2vw;
+    line-height: 1vw;
+    z-index: 500;
+    padding: 0.4vw 0.4vw;
+     font-family: 'JetBrains Mono', monospace;
+}
+
+#greensweatposebuy_container{
+    position: absolute;
+    left: 15vw;
+    top: 103vw;
+}
+#greysweatposebuy_container{
+    position: absolute;
+    left: 40vw;
+    top: 103vw;
+}
+#bluesweatposebuy_container{
+    position: absolute;
+    left: 65vw;
+   top: 103vw;
+}
+
+
+#greensweat {
+    
+    width: 20vw;
+    height: 20vw;
+    
+}
+
+@media (max-width: 600px) { 
+
+#greensweatposebuy_container{
+    position: absolute;
+    left: 15vw;
+    top: 112vw;
+}
+#greysweatposebuy_container{
+    position: absolute;
+    left: 40vw;
+    top: 112vw;
+}
+#bluesweatposebuy_container{
+    position: absolute;
+    left: 65vw;
+   top: 112vw;
+}
+
+
+#greensweat {
+    
+    width: 20vw;
+    height: 20vw;
+    
+}
+
+    
+    .pink_box {
+    top: 55vw;
+    position: absolute;
+    width: 70vw;
+    height: 10.8vw;
+    border-top-right-radius: 25px;
+    font-family: 'JetBrains Mono', monospace;
+     color: rgb(255, 85, 57);
+    text-align: center;
+}
+
+}
+
+
+
+
+
+#menuknap {
+    position: absolute;
+    top: 20vw;
+    left: 5vw;
+    font-size: 4vw;
+    background-color:lightpink;
+    color: rgb(255,85,57);
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
+}
+
+#menu1 {
+    transition: transform .3s;
+    transform-origin: top left;
+    position: absolute;
+    top: 22.2vw;
+    left: 11vw;
+    display: inline-block;
+}
+
+@media (min-width: 600px) {
+    #menuknap {
+    display: none;
+}
+    #menu1.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    #menu1 li {
+        display: inline-block;
+    }
+}
+
+
+/*            <!--   Footer-->*/ 
+#footer {
+    width: 100vw;
+    height: 25vw;
+    position: fixed;
+    background-color: lightblue;
+    bottom: 0;
+    
+}
+
+
+
+@media screen and (min-width: 800px) {
+
+#footer {
+    width: 100vw;
+    height: 20vw;
+    position: absolute;
+    background-color: lightblue;
+    bottom: 0;
+    
+}
+
+}
+
+#instalink {
+    position: absolute;
+   top: 16vw;
+    left: 45vw;
+
+}
+
+#ig {
+    height: 3vw;
+}
+
+#fblink {
+    position: absolute;
+   top: 16vw;
+    left: 50vw;
+
+}
+
+#fb {
+    height: 3vw;
+}
+
+#inlink {
+    position: absolute;
+   top: 16vw;
+    left: 55vw;
+
+}
+
+#in {
+    height: 3vw;
+}
+
+.footerbar .indhold {
+    display: block;
+    top: 5vw;
+    position: absolute;
+    margin-left: 7vw
+    
+}
+
+.footerbar .indhold a {
+    text-align: center;
+    color: rgb(255,85,57);
+    font-size: 1.8vw;
+    line-height: 3.5vw;
+    font-weight: 1000;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin: 5vw
+
+
+}
+
+.menu .content a:hover {
+    background-color: lightpink;
+}
+
+#tlf {
+    position: absolute;
+    top: 16vw;
+    left: 5vw;
+    font-size: 1.2vw;
+    line-height: 3.5vw;
+    font-weight: 1000;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+#adresse {
+       position: absolute;
+    top: 16vw;
+    left: 7vw;
+    font-size: 1.2vw;
+    line-height: 3.5vw;
+    font-weight: 1000;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+#mail {
+       position: absolute;
+    top: 16vw;
+    left: 80vw;
+    font-size: 1.2vw;
+    line-height: 3.5vw;
+    font-weight: 1000;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    
+}
+
+#maillink {
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    color: black;;
+   
+}
+
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    
+}
+
+
+
+
+

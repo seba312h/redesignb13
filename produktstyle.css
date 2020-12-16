@@ -1,0 +1,798 @@
+/*            <!--   Baggrund-->*/ 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#banner {
+    width: 100vw;
+    position: absolute;
+    
+}
+
+#sweat {
+    height: 19vw;
+    position: absolute;
+    top: 28vw;
+    left: 7vw;
+    z-index: -5;
+}
+
+#background {
+    background-color: whitesmoke;
+    height: 150vw;
+    position: relative;
+}
+
+#topbar1 {
+    background-color: lightpink;
+    height: 2vw;
+}
+
+#fragt {
+    position: absolute;
+    top: 0.3vw;
+    left: 70vw;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1vw;
+    line-height:;
+    font-weight: 1000;
+    color: rgb(255,85,57);
+}
+#levering {
+    position: absolute;
+    top: 0.3vw;
+    margin-left: 15vw;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1vw;
+    line-height:; 
+    font-weight: 1000;
+    color: rgb(255,85,57);
+}
+
+#retur {
+    position: absolute;
+    top: 0.3vw;
+    margin-left: 43vw;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1vw;
+    line-height:; 
+    font-weight: 1000;
+    color: rgb(255,85,57);
+}
+
+/*            <!--   Menu og Dropdown->*/ 
+
+.menu {
+    overflow: hidden;
+    background-color: black;
+}
+
+.menu .content {
+    display: block;
+    top: -2vw;
+    position: absolute;
+
+    
+    
+}
+
+.menu .content a {
+    display: flex;
+    background-color: whitesmoke;
+    color: rgb(255,85,57);
+    font-size: 3vw;
+    font-weight: 900;
+    line-height: 3.5vw;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+   background-color: whitesmoke;
+    overflow: hidden;
+    outline: solid 2px;
+    width: 28vw;
+    padding: 1vw;
+
+
+
+}
+
+.menu .content a:hover {
+    background-color: lightpink;
+}
+
+
+.dropdown {
+    height: 6vw;
+    z-index: 15;
+
+
+}
+
+.dropdown .dropbtn { 
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+    
+
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+padding: 2vw;
+    left: 20vw;
+    top: -2vw;
+}
+
+.dropdown-content a {
+  float: none;
+color: whitesmoke;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.kurv .kurv_indhold {
+     top: 20vw;
+    left: 77vw;
+    position: absolute;
+    
+}
+
+.kurv .kurv_indhold a {
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: rgb(255,85,57);
+    font-size: 1.5vw;
+    font-weight: 800;
+    line-height: 3vw;
+    font-family: 'JetBrains Mono', monospace;
+    padding-left: 1vw;
+    padding-right: 2.6vw;
+    padding-top: 0.2vw;
+    padding-bottom: 0.2vw;
+    outline: solid;
+    outline-width: 0.22vw;
+}
+
+.kurv .kurv_indhold a:hover {
+    background-color: lightpink;
+}
+
+
+/*            <!--   Menu og Dropdown over 600px->*/ 
+
+@media (min-width: 600px) {
+    
+
+.menu .content {
+    display: flex;
+    position: absolute;
+    margin-left: 4vw
+}
+
+.menu .content a {
+    text-align: center;
+    background-color: #F3F3F3;
+    color: rgb(255, 85, 57);
+    font-size: 1.2vw;
+    font-weight: 1000;
+    line-height: 1;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    outline-color: rgb(255, 85, 57);
+    outline-style: solid;
+    outline-width: 0.2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    width: 8vw;
+    margin-left: 1vw;
+    height: 1.3vw;
+}
+
+
+.dropdown {
+   position: relative;
+    z-index: 15;
+
+
+}
+
+
+.dropdown-content {
+    top: 0.8vw;
+    left: -2vw;
+    
+}
+
+    
+
+    
+    
+}
+
+/*            <!--  Kategorimenu->*/ 
+
+.kategorier .indhold {
+    display: flex;
+    top: 48vw;
+    left: 20vw;
+    position: absolute;
+    height: 2vw;
+    width: 70vw;
+}
+
+.kategorier .indhold a {
+    display: flex;
+     font-size: 1.4vw;
+    line-height: 1vw;
+    font-weight: 1000;
+    outline-width: 0.3vw;
+    text-decoration: none;
+    color: rgb(255,85,57);
+    background-color: lightblue;
+    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+    outline: solid;
+    outline-width: 0.1vw;
+    outline-color: rgb(255,85,57);
+    font-family: 'JetBrains Mono', monospace;
+    
+    
+}
+
+.kategorier .indhold a:hover {
+    background-color: dimgrey;
+}
+
+
+
+.kurv .kurv_indhold {
+     top: 20vw;
+    left: 77vw;
+    position: absolute;
+    
+}
+
+.kurv .kurv_indhold a {
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: rgb(255,85,57);
+    font-size: 1.5vw;
+    font-weight: 800;
+    line-height: 3vw;
+    font-family: 'JetBrains Mono', monospace;
+    padding-left: 1vw;
+    padding-right: 2.6vw;
+    padding-top: 0.2vw;
+    padding-bottom: 0.2vw;
+    outline: solid;
+    outline-width: 0.22vw;
+}
+
+.kurv .kurv_indhold a:hover {
+    background-color: lightpink;
+}
+
+
+
+ /*            <!--   GreenSweat-->*/ 
+
+#greensweatpose_container {
+    position: absolute;
+    top: 55vw;
+    left: 15vw;
+    z-index: 10;
+     width: 25vw;
+    height: 25vw;
+ 
+}
+
+#greensweat_container {
+    position: absolute;
+  top: 55vw;
+    left: 15vw;
+    z-index: 10;
+  width: 25vw;
+    height: 25vw;
+
+}
+
+
+#greensweat {
+    
+    width: 20vw;
+    height: 20vw;
+    
+}
+
+#greensweatpose {
+    width: 20vw;
+    height: 20vw;
+    
+}
+
+#greensweatpose_container:hover{
+    visibility: collapse;
+}
+
+
+ /*            <!--   navySweat-->*/ 
+
+
+#bluesweatpose_container {
+    position: absolute;
+    top: 82vw;
+    left: 61vw;
+    z-index: 10;
+     width: 25vw;
+    height: 25vw;
+ 
+}
+
+#bluesweat_container {
+    position: absolute;
+  top: 82vw;
+    left: 61vw;
+    z-index: 10;
+  width: 25vw;
+    height: 25vw;
+
+}
+
+
+#navysweat {
+    
+    width: 20vw;
+    height: 20vw;
+    
+}
+
+#navysweatpose {
+    width: 20vw;
+    height: 20vw;
+    
+}
+
+#bluesweatpose_container:hover{
+    visibility: collapse;
+}
+
+
+/*            <!--   GreySweat-->*/ 
+
+#greysweat_container {
+    position: absolute;
+ top: 55vw;
+    left: 38vw;
+    z-index: 10;
+  width: 25vw;
+    height: 25vw;
+
+}
+
+#greysweatpose_container {
+    
+  
+    position: absolute;
+   top: 55vw;
+    left: 38vw;
+    z-index: 10;
+    width: 25vw;
+    height: 25vw;
+
+}
+
+
+#greysweatpose {
+    width: 20vw;
+    height: 20vw;
+}
+
+#greysweat {
+   width: 20vw;
+    height: 20vw;
+}
+
+
+#greysweatpose_container:hover {
+    visibility: collapse;
+}
+
+/*            <!--   PinkSweat-->*/ 
+
+#pinksweat_container {
+    position: absolute;
+    top: 55vw;
+    left: 61vw;
+    z-index: 10;
+    width: 25vw;
+    height: 25vw;
+}
+
+
+#pinksweatpose_container {
+    position: absolute;
+    top: 55vw;
+    left: 61vw;
+    z-index: 10;
+    width: 25vw;
+    height: 25vw;
+}
+
+#pinksweat {
+   width: 20vw;
+    height: 20vw;
+}
+
+#pinksweatpose {
+    width: 20vw;
+    height: 20vw;
+}
+
+#pinksweatpose_container:hover {
+    visibility: collapse;
+}
+
+/*            <!--   BrownSweat-->*/ 
+
+#brownsweat_container {
+    position: absolute;
+    top: 108vw;
+    left: 15vw;
+    z-index: 10;
+    width: 25vw;
+    height: 25vw;
+}
+
+
+#brownsweatpose_container {
+    position: absolute;
+    top: 108vw;
+    left: 15vw;
+    z-index: 10;
+    width: 25vw;
+    height: 25vw;
+}
+
+#chokoladesweat {
+   width: 20vw;
+    height: 20vw;
+}
+
+#chokoladesweatpose {
+    width: 20vw;
+    height: 20vw;
+}
+
+#brownsweatpose_container:hover {
+    visibility: collapse;
+}
+
+/*            <!--   PinkHoodie-->*/ 
+
+#pinkhoodie_container {
+    position: absolute;
+    top: 82vw;
+    left: 15vw;
+    z-index: 10;
+    width: 25vw;
+    height: 25vw;
+}
+
+
+#pinkhoodiepose_container {
+    position: absolute;
+    top: 82vw;
+    left: 15vw;
+    z-index: 10;
+    width: 25vw;
+    height: 25vw;
+}
+
+#pinkhoodie {
+  width: 20vw;
+    height: 20vw;
+}
+
+#pinkhoodiepose {
+  width: 20vw;
+    height: 20vw;
+}
+
+#pinkhoodiepose_container:hover {
+    visibility: collapse;
+}
+
+/*            <!--   BlueHoodie-->*/ 
+
+#bluehoodie_container {
+    position: absolute;
+    top: 82vw;
+    left: 38vw;
+    z-index: 10;
+    width: 25vw;
+    height: 25vw;
+}
+
+
+#bluehoodiepose_container {
+    position: absolute;
+   top: 82vw;
+    left: 38vw;
+    z-index: 10;
+    width: 25vw;
+    height: 25vw;
+}
+
+#bluehoodie {
+   width: 20vw;
+    height: 20vw;
+}
+
+#bluehoodiepose {
+ width: 20vw;
+    height: 20vw;
+}
+
+#bluehoodiepose_container:hover {
+    visibility: collapse;
+}
+
+
+
+/*            <!--   Popups->*/ 
+
+#popup_container {
+    position: absolute;
+    height: 7vw;
+    width: 18vw;
+    top: 69.1vw;
+    left: 17vw;
+    z-index: 25;
+}
+
+#popup_container2 {
+    position: absolute;
+    height: 7vw;
+    width: 18vw;
+    top: 69.1vw;
+    left: 40vw;
+    z-index: 25;
+}
+
+#popup_container3 {
+    position: absolute;
+    height: 5vw;
+    width: 18vw;
+    top: 69.1vw;
+    left: 63.05vw;
+    z-index: 25;
+}
+
+#popup_container4 {
+    position: absolute;
+     height: 7vw;
+    width: 18vw;
+    top: 96.1vw;
+    left: 17vw;
+    z-index: 25;
+}
+
+#popup_container5 {
+    position: absolute;
+    height: 7vw;
+    width: 18vw;
+    top: 96.1vw;
+    left: 40vw;
+    z-index: 25;
+}
+
+#popup_container6 {
+    position: absolute;
+    height: 7vw;
+    width: 18vw;
+    top: 96.1vw;
+    left: 63vw;
+    z-index: 25;
+}
+#popup_container7 {
+    position: absolute;
+    height: 7vw;
+    width: 18vw;
+    top: 122.1vw;
+    left: 17vw;
+    z-index: 25;
+}
+
+/*            <!--   Footer-->*/ 
+#footer {
+    width: 100vw;
+    height: 25vw;
+    position: fixed;
+    background-color: lightblue;
+    bottom: 0;
+    
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+#footer {
+    width: 100vw;
+    height: 20vw;
+    position: absolute;
+    background-color: lightblue;
+    top: 150vw;
+    
+}
+
+}
+
+#instalink {
+    position: absolute;
+   top: 16vw;
+    left: 45vw;
+
+}
+
+#ig {
+    height: 3vw;
+}
+
+#fblink {
+    position: absolute;
+   top: 16vw;
+    left: 50vw;
+
+}
+
+#fb {
+    height: 3vw;
+}
+
+#inlink {
+    position: absolute;
+   top: 16vw;
+    left: 55vw;
+
+}
+
+#in {
+    height: 3vw;
+}
+
+.footerbar .indhold {
+    display: block;
+    top: 5vw;
+    position: absolute;
+    margin-left: 7vw
+    
+}
+
+.footerbar .indhold a {
+    text-align: center;
+    color: rgb(255,85,57);
+    font-size: 1.8vw;
+    line-height: 3.5vw;
+    font-weight: 1000;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin: 5vw
+
+
+}
+
+.menu .content a:hover {
+    background-color: lightpink;
+}
+
+#tlf {
+    position: absolute;
+    top: 16vw;
+    left: 5vw;
+    font-size: 1.2vw;
+    line-height: 3.5vw;
+    font-weight: 1000;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+}
+
+#adresse {
+       position: absolute;
+    top: 16vw;
+    left: 7vw;
+    font-size: 1.2vw;
+    line-height: 3.5vw;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+#mail {
+       position: absolute;
+    top: 16vw;
+    left: 80vw;
+    font-size: 1.2vw;
+    line-height: 3.5vw;
+    font-weight: 1000;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+    
+}
+
+#maillink {
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    color: black;;
+   
+}
+
+
+
+
+
+/*            <!--   Div. Animationer-->*/ 
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    
+}
+
+#menuknap {
+    position: absolute;
+    top: 20vw;
+    left: 5vw;
+    font-size: 4vw;
+    background-color:lightpink;
+    color: rgb(255,85,57);
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
+}
+
+#menu1 {
+    transition: transform .3s;
+    transform-origin: top left;
+    position: absolute;
+    top: 22.2vw;
+    left: 11vw;
+    display: inline-block;
+}
+
+@media (min-width: 600px) {
+    #menuknap {
+    display: none;
+}
+    #menu1.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    #menu1 li {
+        display: inline-block;
+    }
+}
+
+

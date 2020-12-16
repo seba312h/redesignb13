@@ -1,0 +1,563 @@
+img {
+    width: 100%;
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F3F3F3;
+    height: 100vw;
+    position: relative;
+
+}
+
+/*Banner */
+
+#banner {
+    width: 100%;
+    height: 12vw;
+    position: relative;
+    background-color: #EDEA90;
+
+}
+
+#logo {
+    position: relative;
+    width: 30vw;
+    height: 31vw;
+    top: -9vw;
+    left: 36vw;
+}
+
+#background {
+    background-color: whitesmoke;
+    height: 150vw;
+    position: relative;
+}
+
+
+#topbar1 {
+    background-color: lightpink;
+    height: 2vw;
+}
+
+#fragt {
+    position: absolute;
+    top: -1.2vw;
+    left: 70vw;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1vw;
+    font-weight: 1000;
+    color: rgb(255,85,57);
+}
+#levering {
+    position: absolute;
+    top: -1.2vw;
+    margin-left: 15vw;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1vw; 
+    font-weight: 1000;
+    color: rgb(255,85,57);
+}
+
+#retur {
+    position: absolute;
+    top: -1.2vw;
+    margin-left: 43vw;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1vw;
+    font-weight: 1000;
+    color: rgb(255,85,57);
+}
+
+
+/*            <!--   Menu og Dropdown->*/ 
+
+.menu {
+    overflow: hidden;
+    background-color: black;
+    margin-left: -2.5vw;
+    
+}
+
+.menu .content {
+    display: block;
+    position: absolute;
+    top: -6vw;
+
+    
+    
+}
+
+.menu .content a {
+    display: flex;
+    background-color: whitesmoke;
+    color: rgb(255,85,57);
+    font-size: 3vw;
+    font-weight: 900;
+    line-height: 3.5vw;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+   background-color: whitesmoke;
+    overflow: hidden;
+    outline: solid 2px;
+    width: 28vw;
+    padding: 1vw;
+
+
+
+}
+
+.menu .content a:hover {
+    background-color: lightpink;
+}
+
+
+.dropdown {
+    height: 6vw;
+    z-index: 15;
+
+
+}
+
+.dropdown .dropbtn { 
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+    
+
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+padding: 2vw;
+    left: 20vw;
+    top: -2vw;
+}
+
+.dropdown-content a {
+  float: none;
+color: whitesmoke;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.kurv .kurv_indhold {
+     top: 17.3vw;
+    left: 77vw;
+    position: absolute;
+    
+}
+
+.kurv .kurv_indhold a {
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: rgb(255,85,57);
+    font-size: 1.5vw;
+    font-weight: 800;
+    line-height: 3vw;
+    font-family: 'JetBrains Mono', monospace;
+    padding-left: 1vw;
+    padding-right: 2.6vw;
+    padding-top: 0.2vw;
+    padding-bottom: 0.2vw;
+    outline: solid;
+    outline-width: 0.22vw;
+}
+
+.kurv .kurv_indhold a:hover {
+    background-color: lightpink;
+}
+
+
+/*            <!--   Menu og Dropdown over 600px->*/ 
+
+@media (min-width: 600px) {
+    
+
+.menu .content {
+    display: flex;
+    position: absolute;
+    margin-left: 4vw
+}
+
+.menu .content a {
+    text-align: center;
+    background-color: #F3F3F3;
+    color: rgb(255, 85, 57);
+    font-size: 1.2vw;
+    font-weight: 1000;
+    line-height: 1;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    outline-color: rgb(255, 85, 57);
+    outline-style: solid;
+    outline-width: 0.2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    width: 8vw;
+    margin-left: 1vw;
+    height: 1.3vw;
+}
+
+
+.dropdown {
+   position: relative;
+    z-index: 15;
+
+
+}
+
+
+.dropdown-content {
+    top: 0.8vw;
+    left: -2vw;
+    
+}
+
+    
+
+    
+    
+}
+
+
+/*---------indhold-------*/
+/*sectionwrapper med blå boks, rød boks, billede og tekst */
+.section_wrapper {
+    margin-left: 1vw;
+    margin-right: 3vw;
+}
+
+/*Lyserød boks */
+.pink_box {
+    bottom: 13.3vw;
+    position: relative;
+    width: 32.8vw;
+    height: 10.8vw;
+    background-color: lightpink;
+    border-top-right-radius: 25px;
+}
+
+/*styling på overskrift i lyserød boks */
+.pink_box h2 {
+    font-family: 'JetBrains Mono', monospace;
+    color: rgb(255, 85, 57);
+    line-height: 5vw;
+    font-size: 3vw;
+    padding-left: 10vw;
+    position: relative;
+    top: 2vw;
+    margin-left: 1vw;
+}
+
+
+/*Blå boks */
+
+.blue_box {
+    top: 10vw;
+    left: 15vw;
+    position: relative;
+    width: 34vw;
+    height: 51vw;
+    background-color: lightblue;
+    z-index: -1;
+}
+
+/*billede */
+
+.image {
+    position: relative;
+    width: 32.8vw;
+    height: 54vw;
+    top: -41vw;
+    left: 49vw;
+    z-index: -1;
+}
+
+/*styling på overskrift til tekstfelt */
+
+.blue_box h2 {
+    font-family: 'JetBrains Mono', monospace;
+    color: rgb(255, 85, 57);
+    line-height: 5vw;
+    font-size: 1.2vw;
+    padding-left: 1vw;
+
+
+}
+
+/*styling på tekst */
+.blue_box p {
+    font-family: 'JetBrains Mono', monospace;
+    /*    line-height: 5vw;*/
+    font-size: 1vw;
+    padding-left: 1vw;
+
+
+}
+
+.blue_box h2,
+p {
+    line-height: 1.2vw;
+    padding-top: 0.5vw;
+    margin-right: 2vw;
+    position: relative;
+    top: 2vw;
+    margin-left: 1vw;
+
+}
+
+.images {
+    display: flex;
+    position: relative;
+    right: 33.5vw;
+    top: 10vw;
+
+}
+
+
+.billed1 {
+    position: relative;
+    width: 21vw;
+    bottom: 38vw;
+    left: 49vw;
+    margin-right: 1.5vw;
+    border: solid 4px lightpink;
+    border-top-right-radius: 4px;
+
+
+}
+
+.billed2 {
+    position: relative;
+    width: 21vw;
+    bottom: 38vw;
+    left: 49vw;
+    margin-right: 1.5vw;
+    border: solid 4px lightpink;
+}
+
+.billed3 {
+    position: relative;
+    width: 21vw;
+    bottom: 38vw;
+    left: 49vw;
+    border: solid 4px lightpink;
+}
+
+
+/*            <!--   Div. Animationer-->*/
+
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+
+.showas {
+    animation-name: show_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+@keyframes show_kf {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+
+/*            <!--   Footer-->*/
+#footer {
+    width: 100vw;
+    height: 25vw;
+    position: fixed;
+    background-color: lightblue;
+    bottom: 0;
+
+}
+
+@media screen and (min-width: 800px) {
+
+    #footer {
+        width: 100%;
+        height: 20vw;
+        position: absolute;
+        background-color: lightblue;
+        bottom: 0;
+
+    }
+
+}
+
+#instalink {
+    position: absolute;
+    top: 16vw;
+    left: 45vw;
+
+}
+
+#ig {
+    height: 3vw;
+}
+
+#fblink {
+    position: absolute;
+    top: 16vw;
+    left: 50vw;
+
+}
+
+#fb {
+    height: 3vw;
+}
+
+#inlink {
+    position: absolute;
+    top: 16vw;
+    left: 55vw;
+
+}
+
+#in {
+    height: 3vw;
+}
+
+.footerbar .indhold {
+    display: block;
+    top: 5vw;
+    position: absolute;
+    margin-left: 7vw
+}
+
+.footerbar .indhold a {
+    text-align: center;
+    color: rgb(255, 85, 57);
+    font-size: 1.8vw;
+    line-height: 3.5vw;
+    font-weight: 1000;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin: 5vw
+}
+
+.menu .content a:hover {
+    background-color: lightpink;
+}
+
+#tlf {
+    position: absolute;
+    top: 16vw;
+    left: 5vw;
+    font-size: 1.2vw;
+    line-height: 3.5vw;
+    font-weight: 1200;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+}
+
+#adresse {
+    position: absolute;
+    top: 16vw;
+    left: 7vw;
+    font-size: 1.2vw;
+    line-height: 3.5vw;
+    font-weight: 1000;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+#mail {
+    position: absolute;
+    top: 16vw;
+    left: 80vw;
+    font-size: 1.2vw;
+    line-height: 3.5vw;
+    font-weight: 1000;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+
+}
+
+#maillink {
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    color: black;
+    ;
+
+}
+
+
+#menuknap {
+    position: absolute;
+    top: 20vw;
+    left: 5vw;
+    font-size: 4vw;
+    background-color:lightpink;
+    color: rgb(255,85,57);
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
+}
+
+#menu1 {
+    transition: transform .3s;
+    transform-origin: top left;
+    position: absolute;
+    top: 22.2vw;
+    left: 11vw;
+    display: inline-block;
+}
+
+@media (min-width: 600px) {
+    #menuknap {
+    display: none;
+}
+    #menu1.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    #menu1 li {
+        display: inline-block;
+    }
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    
+}
